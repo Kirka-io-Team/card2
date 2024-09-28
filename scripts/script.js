@@ -1,4 +1,4 @@
-const userID = "738748102311280681"; // Change this to your Discord user ID
+const userID = "Ttvpoopooumgood"; // Change this to your Discord user ID
 
 const elements = {
 	statusBox: document.getElementById("status"),
@@ -7,18 +7,18 @@ const elements = {
 	avaterDecoration: document.getElementById("avatar-decoration"),
 	bannerImage: document.getElementById("banner-image"),
 	bannerColor: document.querySelector(".banner"),
-	displayName: document.querySelector(".display-name"),
-	username: document.querySelector(".username"),
+	name: document.querySelector(".display-name"),
+	login: document.querySelector(".username"),
 	badges: document.querySelector(".badges-left"),
 	customStatus: document.querySelector(".custom-status"),
-	customStatusText: document.querySelector(".custom-status-text"),
+	bio: document.querySelector(".custom-status-text"),
 	customStatusEmoji: document.getElementById("custom-status-emoji"),
 };
 
 async function fetchDiscordStatus() {
 	try {
 		const [lanyardResponse, lookupResponse] = await Promise.all([
-			fetch(`https://api.lanyard.rest/v1/users/${userID}`).then((response) =>
+			fetch(`https://api.github.com/users/${userID}`).then((response) =>
 				response.json()
 			),
 			fetch(`https://discordlookup.mesavirep.xyz/v1/user/${userID}`).then(

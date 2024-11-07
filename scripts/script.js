@@ -1,4 +1,4 @@
-const userID = "Ttvpoopooumgood"; // Change this to your Discord user ID
+const userID = "1169111190824308768"; // Change this to your Discord user ID
 
 const elements = {
 	statusBox: document.getElementById("status"),
@@ -18,7 +18,7 @@ const elements = {
 async function fetchDiscordStatus() {
 	try {
 		const [lanyardResponse, lookupResponse] = await Promise.all([
-			fetch(`https://api.github.com/users/${userID}`).then((response) =>
+			fetch(`https://api.lanyard.rest/v1/users/${userID}`).then((response) =>
 				response.json()
 			),
 			fetch(`https://discordlookup.mesavirep.xyz/v1/user/${userID}`).then(
@@ -38,19 +38,19 @@ async function fetchDiscordStatus() {
 		let imagePath;
 		switch (discord_status) {
 			case "online":
-				imagePath = "./public/status/online.svg";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_2.webp";
 				break;
 			case "idle":
-				imagePath = "./public/status/idle.svg";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_1.webp";
 				break;
 			case "dnd":
-				imagePath = "./public/status/dnd.svg";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_1.webp";
 				break;
 			case "offline":
-				imagePath = "./public/status/offline.svg";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_3.webp";
 				break;
 			default:
-				imagePath = "./public/status/offline.svg";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_3.webp";
 				break;
 		}
 

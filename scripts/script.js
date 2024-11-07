@@ -41,10 +41,10 @@ async function fetchDiscordStatus() {
 				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_2.webp";
 				break;
 			case "idle":
-				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_1.webp";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_3.webp";
 				break;
 			case "dnd":
-				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_1.webp";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed.webp";
 				break;
 			case "offline":
 				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_3.webp";

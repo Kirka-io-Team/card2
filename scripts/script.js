@@ -62,7 +62,7 @@ async function fetchDiscordStatus() {
 						activity.url.includes("youtube.com"))
 			)
 		) {
-			imagePath = "./public/status/streaming.svg";
+			imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_5.webp";
 		}
 
 		// Banner

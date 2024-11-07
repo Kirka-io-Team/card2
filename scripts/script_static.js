@@ -24,22 +24,17 @@ async function fetchDiscordStatus() {
 		]);
 
 		const lanyardData = lanyardResponse.data;
-
-		const { discord_status, activities, discord_user, emoji } = lanyardData;
-
-		elements.displayName.innerHTML = discord_user.display_name;
-		elements.username.innerHTML = discord_user.username;
-
+		
 		let imagePath;
 		switch (discord_status) {
 			case "online":
 				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_2.webp";
 				break;
 			case "idle":
-				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_1.webp";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_3.webp";
 				break;
 			case "dnd":
-				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_1.webp";
+				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed.webp";
 				break;
 			case "offline":
 				imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_3.webp";
@@ -57,7 +52,7 @@ async function fetchDiscordStatus() {
 						activity.url.includes("youtube.com"))
 			)
 		) {
-			imagePath = "./public/status/streaming.svg";
+			imagePath = "https://juicepoopooumgood.github.io/Api-guy/image_upscaled_object_removed_5.webp";
 		}
 
 		elements.statusImage.src = imagePath;
